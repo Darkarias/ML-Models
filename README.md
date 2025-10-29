@@ -1,4 +1,4 @@
-# Artificial Intelligence Fundamentals – Problem Sets 1 & 2
+# Artificial Intelligence Fundamentals
 
 **Author:** Jacob Mongold  
 **Program:** M.S. Artificial Intelligence, Rochester Institute of Technology (RIT)  
