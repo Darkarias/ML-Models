@@ -16,6 +16,28 @@ Implements tokenization, priors, likelihoods, optional Laplace smoothing, and an
 | `README.md` | Project documentation |
 | `requirements.txt` | Minimal dependencies |
 
+## Example: Loading local CSV files
+
+If your data files are in the same folder as this notebook or script, you can use the following setup to automatically load them without changing any paths:
+
+```python
+import os
+import pandas as pd
+
+BASE = os.getcwd()
+
+REV_TRAIN = os.path.join(BASE, "reviews_polarity_train.csv")
+REV_TEST  = os.path.join(BASE, "reviews_polarity_test.csv")
+NG_TRAIN  = os.path.join(BASE, "newsgroup_train.csv")
+NG_TEST   = os.path.join(BASE, "newsgroup_test.csv")
+
+reviews_train = pd.read_csv(REV_TRAIN)
+reviews_test  = pd.read_csv(REV_TEST)
+news_train    = pd.read_csv(NG_TRAIN)
+news_test     = pd.read_csv(NG_TEST)
+
+print("✅ All CSV files successfully loaded.")
+
 ## Key Features
 - Multinomial Naive Bayes in log space
 - Optional Laplace smoothing (+1)
