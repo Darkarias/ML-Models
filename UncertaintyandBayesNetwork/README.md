@@ -36,7 +36,7 @@ reviews_test  = pd.read_csv(REV_TEST)
 news_train    = pd.read_csv(NG_TRAIN)
 news_test     = pd.read_csv(NG_TEST)
 
-print("✅ All CSV files successfully loaded.")
+print("All CSV files successfully loaded.")
 
 ## Key Features
 - Multinomial Naive Bayes in log space
