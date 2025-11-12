@@ -8,7 +8,7 @@
 ---
 
 ## Overview
-This repository contains two major problem sets demonstrating core Artificial Intelligence algorithms implemented from scratch — emphasizing algorithmic design, mathematical understanding, and performance evaluation.
+This repository contains major problem sets demonstrating core Artificial Intelligence algorithms implemented from scratch — emphasizing algorithmic design, mathematical understanding, and performance evaluation.
 
 | Problem Set | Focus Area | Implementation | Key Methods |
 |--------------|-------------|----------------|--------------|
