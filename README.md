@@ -17,3 +17,9 @@ This repository contains two major problem sets demonstrating core Artificial In
 | **PS3** | Uncertainty and Bayesian Modeling | `bayes.py` | Full Joint Distributions, Naive Bayes Classification, Laplace Smoothing, Bayes Network Inference |
 
 Each project includes complete source code, configuration files, and final reports with detailed experimentation and discussion.
+
+🔭 Current Research
+
+I’m currently implementing a Physics-Informed Neural Network (PINN) designed to simulate stellar structure and evolution.
+The goal is to create a digital twin of a star, integrating physical laws directly into the learning process.
+This work serves as the foundation for a larger research direction—developing a digital twin of a bound black hole system, combining general relativity, differential equations, and AI-driven modeling to explore spacetime behavior computationally.
