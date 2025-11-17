@@ -15,6 +15,7 @@ This repository contains major problem sets demonstrating core Artificial Intell
 | **PS1** | Decision Trees for Clinical Data | `decision_tree_scratch.py` | Entropy, Gini Impurity, Recursive Tree-Building, Baseline Comparison |
 | **PS2** | Genetic Algorithms for 0–1 Knapsack | `genome_ps2.py` | Tournament & Roulette Selection, Crossover, Mutation, Performance Analysis |
 | **PS3** | Uncertainty and Bayesian Modeling | `bayes.py` | Full Joint Distributions, Naive Bayes Classification, Laplace Smoothing, Bayes Network Inference |
+| **PS4** | Gradient-Based Optimization | `gradient-notebook.ipynb` | Gradient Descent, Cost Functions, Convergence Analysis |
 
 Each project includes complete source code, configuration files, and final reports with detailed experimentation and discussion.
 
