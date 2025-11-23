@@ -7,7 +7,7 @@ import argparse
 from pathlib import Path
 
 # Import your model
-from GR_PINN.PINN.pinn import StarNet
+from GR_PINN.pinn import StarNet
 
 def get_trajectory(model, M, r_start, vr_start, vphi_start, tau_range=(-10, 10), steps=2000, device='cpu'):
     """Generates the trajectory data from the model."""

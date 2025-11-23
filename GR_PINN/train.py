@@ -5,14 +5,14 @@ import numpy as np
 import torch
 import os
 
-from GR_PINN.PINN.pinn import (
+from GR_PINN.pinn import (
     StarNet,
     calculate_total_loss,
     sample_collocation,
 )
 
 try:
-    from GR_PINN.PINN.visualization import log_radial_trajectory
+    from GR_PINN.visualization import log_radial_trajectory
 except ModuleNotFoundError:
     log_radial_trajectory = None
 
