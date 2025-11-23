@@ -22,7 +22,7 @@ except ModuleNotFoundError:
     plt = None
     HAS_MATPLOTLIB = False
 
-from pinn import sample_initial_conditions
+from GR_PINN.PINN.pinn import sample_initial_conditions
 
 
 @torch.no_grad()

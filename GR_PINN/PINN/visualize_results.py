@@ -6,7 +6,7 @@ import argparse
 from pathlib import Path
 
 # Import your model architecture
-from pinn import StarNet
+from GR_PINN.PINN.pinn import StarNet
 
 def get_trajectory(model, M, r_start, vr_start, vphi_start, tau_range=(-10, 10), steps=2000, device='cpu'):
     """
