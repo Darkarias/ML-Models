@@ -4,7 +4,13 @@ A Physics-Informed Neural Network (PINN) for solving geodesic motion in the Schw
 
 ## Focus Keyword: GR PINN
 
-This repository contains your GR PINN implementation built in PyTorch. The model learns geodesics by minimizing residuals of the Schwarzschild metric equations and enforcing initial conditions.
+This work introduces StarNet, a Physics-Informed Neural Network (PINN) designed to simulate geodesic motion in the curved
+spacetime of a Schwarzschild black hole without relying on traditional numerical integration. By directly embedding the geodesic
+equation and Christoffel symbols into the loss function, the network learns the geometry of spacetime as a continuous, differentiable
+function of proper time. The results demonstrate that StarNet successfully captures non-Newtonian relativistic phenomena,
+including perihelion precession and horizon crossing, while maintaining orbital stability over long integration times. This
+approach offers a novel, data-free method for modeling general relativity, with potential applications for inverse problems in
+astrophysics.
 
 ---
 
