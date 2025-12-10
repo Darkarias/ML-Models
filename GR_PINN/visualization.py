@@ -19,21 +19,14 @@ try:
     import matplotlib.pyplot as plt
     HAS_MATPLOTLIB = True
 except ModuleNotFoundError:
-    plt = None
     HAS_MATPLOTLIB = False
+    plt = None
 
-from GR_PINN.pinn import sample_initial_conditions
+from pinn import sample_initial_conditions
 
 
 @torch.no_grad()
-def log_radial_trajectory(
-    model,
-    M,
-    tau_range,
-    traj_samples,
-    save_path: Path,
-    device,
-):
+def log_radial_trajectory(model, M, tau_range, traj_samples, save_path: Path, device):
     """Roll out one geodesic and plot r(τ) to check horizon crossings."""
     if not HAS_MATPLOTLIB:
         print("Skipping trajectory plot: matplotlib is not installed.")
@@ -43,11 +36,7 @@ def log_radial_trajectory(
     save_path = next_versioned_filename(save_path)
 
     rs = 2.0 * M
-    p0, v0 = sample_initial_conditions(
-        batch_size=1,
-        rs=rs,
-        device=device,
-    )
+    p0, v0 = sample_initial_conditions(batch_size=1, rs=rs, device=device)
     tau = torch.linspace(tau_range[0], tau_range[1], traj_samples, device=device).unsqueeze(1)
 
     init_p = p0.repeat(traj_samples, 1)
