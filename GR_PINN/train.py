@@ -105,7 +105,7 @@ def train(
     for step in range(start_step, steps + 1):
         # Sample random collocation points: initial conditions + random times
         # Physics loss is evaluated at these points
-        physics_data, ic_data = sample_collocation(batch_size, M=M, tau_range=tau_range, device=device)
+        physics_data, ic_data = sample_collocation(batch_size, M=M, tau_range=tau_range, device=str(device))
 
         # Compute combined loss: physics (geodesic) + initial conditions
         loss = calculate_total_loss(model, physics_data, ic_data, M, lambda_phys=lambda_phys, lambda_ic=lambda_ic)
