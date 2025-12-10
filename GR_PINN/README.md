@@ -29,11 +29,8 @@ astrophysics.
 ```
 GR_PINN/
 │
-├── config.py              # Hyperparameters and training settings
 ├── train.py               # Training loop and logging
 ├── pinn.py                # PINN model, metric, residuals, IC loss
-├── utils.py               # Sampling, helper functions
-├── logs/                  # Saved losses and txt logs
 ├── outputs/               # Generated trajectory plots
 └── README.md              # Project documentation
 ```
@@ -59,12 +56,6 @@ Run training from the project root:
 ```bash
 python train.py --steps 10000 --lr 1e-4 --M 1.0
 ```
-
-Key arguments:
-- --steps total optimization steps
-- --lr learning rate
-- --M mass parameter
-- --device cpu or cuda
 
 ---
 
